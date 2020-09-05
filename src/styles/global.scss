@@ -19,6 +19,27 @@ body {
   }
 }
 .blog-post-container {
+  .blog-post {
+    position: relative;
+    .table-of-content {
+      position: sticky;
+      top: 0;
+      right: -100px;
+      margin: auto;
+
+      &:before {
+        content: "目次";
+      }
+      ul {
+        list-style-type: "-";
+        li {
+          a {
+            margin-left: 0.5rem;
+          }
+        }
+      }
+    }
+  }
   .gatsby-image-wrapper {
     border-radius: 0.3em;
   }
@@ -28,4 +49,8 @@ body {
   .blog-post-content {
     overflow-wrap: break-word;
   }
+}
+.gatsby-highlight {
+  font-size: 14px;
+  letter-spacing: 0em;
 }
