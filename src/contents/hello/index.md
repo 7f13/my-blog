@@ -2,6 +2,8 @@
 slug: "/blog/my-first-post"
 date: "2020-09-05"
 title: "AtCoder: L - Interactive Sorting のテストケース3を、多重if文や力技でなく、Ford-Johnson Algorithmで解く"
+category: AtCoder
+featuredImage: gracia-dharma-Zi750XHr0p0-unsplash.jpg
 ---
 
 【20200720 追記】  
@@ -14,7 +16,9 @@ https://github.com/TheAlgorithms/Python/pull/2211
 【問題】  
 https://atcoder.jp/contests/language-test-202001/tasks/practice_2  
 <br/>
-【実装】  
+
+# 実装
+
 ・テストケース 1, 2 : マージソートで実装  
 ・テストケース 3 : Ford-Johnson Algorithm(merge insert sort)で実装  
 <br/>

@@ -45,13 +45,13 @@ const FooterLogo = ({ className }: FooterLogoProps) => {
 export const Footer = () => {
   // breakpoint : sm
   return (
-    <footer className="border-solid border-gray-200 border-t py-4 px-2 sm:px-12 ">
+    <footer className="border-solid border-gray-200 border-t py-4 px-2 sm:px-12 sm:pb-16">
       <div className="flex flex-col sm:flex-row items-center justify-between sm:mb-6">
         <Link to="/">
           <FooterLogo className="dosis text-2xl my-4 md:text-2xl sm:m-0 hover:text-teal-400" />
         </Link>
         <div className="my-6">
-          <p className="text-md font-light mb-2">Writer's social medias:</p>
+          <p className="text-md mb-2">Writer's social medias:</p>
           <ul className="flex items-center justify-center mb-6 sm:mb-0">
             {SNS_LINKS.map(link => {
               return <SnsLink link={link} />

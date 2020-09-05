@@ -13,7 +13,7 @@ export const MobileMenu: React.FC<Props> = ({ isOpen, toggleOpen }) => {
           <ul className="mb-32">
             {HEADER_PATHS.map(link => (
               <Link to={link.to} key={link.to}>
-                <li className="mb-2 text-3xl font-light text-center">
+                <li className="mb-2 text-2xl text-center">
                   {link.displayName}
                 </li>
               </Link>

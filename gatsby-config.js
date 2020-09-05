@@ -46,36 +46,15 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-remark-prismjs`,
           {
-            resolve: `gatsby-remark-prismjs`,
+            resolve: `gatsby-remark-images`,
             options: {
-              classPrefix: "language-",
-              inlineCodeMarker: null,
-              aliases: {},
-              showLineNumbers: false,
-              noInlineHighlight: false,
-              languageExtensions: [
-                {
-                  language: "superscript",
-                  extend: "javascript",
-                  definition: {
-                    superscript_types: /(SuperType)/,
-                  },
-                  insertBefore: {
-                    function: {
-                      superscript_keywords: /(superif|superelse)/,
-                    },
-                  },
-                },
-              ],
-              prompt: {
-                user: "root",
-                host: "localhost",
-                global: false,
-              },
-              escapeEntities: {},
+              maxWidth: 864,
+              tracedSVG: true,
             },
           },
+          `gatsby-remark-autolink-headers`,
         ],
       },
     },

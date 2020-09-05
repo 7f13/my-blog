@@ -696,6 +696,43 @@ export type FileFieldsEnum =
   | 'childMarkdownRemark___frontmatter___title'
   | 'childMarkdownRemark___frontmatter___slug'
   | 'childMarkdownRemark___frontmatter___date'
+  | 'childMarkdownRemark___frontmatter___category'
+  | 'childMarkdownRemark___frontmatter___featuredImage___sourceInstanceName'
+  | 'childMarkdownRemark___frontmatter___featuredImage___absolutePath'
+  | 'childMarkdownRemark___frontmatter___featuredImage___relativePath'
+  | 'childMarkdownRemark___frontmatter___featuredImage___extension'
+  | 'childMarkdownRemark___frontmatter___featuredImage___size'
+  | 'childMarkdownRemark___frontmatter___featuredImage___prettySize'
+  | 'childMarkdownRemark___frontmatter___featuredImage___modifiedTime'
+  | 'childMarkdownRemark___frontmatter___featuredImage___accessTime'
+  | 'childMarkdownRemark___frontmatter___featuredImage___changeTime'
+  | 'childMarkdownRemark___frontmatter___featuredImage___birthTime'
+  | 'childMarkdownRemark___frontmatter___featuredImage___root'
+  | 'childMarkdownRemark___frontmatter___featuredImage___dir'
+  | 'childMarkdownRemark___frontmatter___featuredImage___base'
+  | 'childMarkdownRemark___frontmatter___featuredImage___ext'
+  | 'childMarkdownRemark___frontmatter___featuredImage___name'
+  | 'childMarkdownRemark___frontmatter___featuredImage___relativeDirectory'
+  | 'childMarkdownRemark___frontmatter___featuredImage___dev'
+  | 'childMarkdownRemark___frontmatter___featuredImage___mode'
+  | 'childMarkdownRemark___frontmatter___featuredImage___nlink'
+  | 'childMarkdownRemark___frontmatter___featuredImage___uid'
+  | 'childMarkdownRemark___frontmatter___featuredImage___gid'
+  | 'childMarkdownRemark___frontmatter___featuredImage___rdev'
+  | 'childMarkdownRemark___frontmatter___featuredImage___ino'
+  | 'childMarkdownRemark___frontmatter___featuredImage___atimeMs'
+  | 'childMarkdownRemark___frontmatter___featuredImage___mtimeMs'
+  | 'childMarkdownRemark___frontmatter___featuredImage___ctimeMs'
+  | 'childMarkdownRemark___frontmatter___featuredImage___atime'
+  | 'childMarkdownRemark___frontmatter___featuredImage___mtime'
+  | 'childMarkdownRemark___frontmatter___featuredImage___ctime'
+  | 'childMarkdownRemark___frontmatter___featuredImage___birthtime'
+  | 'childMarkdownRemark___frontmatter___featuredImage___birthtimeMs'
+  | 'childMarkdownRemark___frontmatter___featuredImage___blksize'
+  | 'childMarkdownRemark___frontmatter___featuredImage___blocks'
+  | 'childMarkdownRemark___frontmatter___featuredImage___publicURL'
+  | 'childMarkdownRemark___frontmatter___featuredImage___id'
+  | 'childMarkdownRemark___frontmatter___featuredImage___children'
   | 'childMarkdownRemark___excerpt'
   | 'childMarkdownRemark___rawMarkdownBody'
   | 'childMarkdownRemark___fileAbsolutePath'
@@ -1462,6 +1499,68 @@ export type MarkdownRemarkFieldsEnum =
   | 'frontmatter___title'
   | 'frontmatter___slug'
   | 'frontmatter___date'
+  | 'frontmatter___category'
+  | 'frontmatter___featuredImage___sourceInstanceName'
+  | 'frontmatter___featuredImage___absolutePath'
+  | 'frontmatter___featuredImage___relativePath'
+  | 'frontmatter___featuredImage___extension'
+  | 'frontmatter___featuredImage___size'
+  | 'frontmatter___featuredImage___prettySize'
+  | 'frontmatter___featuredImage___modifiedTime'
+  | 'frontmatter___featuredImage___accessTime'
+  | 'frontmatter___featuredImage___changeTime'
+  | 'frontmatter___featuredImage___birthTime'
+  | 'frontmatter___featuredImage___root'
+  | 'frontmatter___featuredImage___dir'
+  | 'frontmatter___featuredImage___base'
+  | 'frontmatter___featuredImage___ext'
+  | 'frontmatter___featuredImage___name'
+  | 'frontmatter___featuredImage___relativeDirectory'
+  | 'frontmatter___featuredImage___dev'
+  | 'frontmatter___featuredImage___mode'
+  | 'frontmatter___featuredImage___nlink'
+  | 'frontmatter___featuredImage___uid'
+  | 'frontmatter___featuredImage___gid'
+  | 'frontmatter___featuredImage___rdev'
+  | 'frontmatter___featuredImage___ino'
+  | 'frontmatter___featuredImage___atimeMs'
+  | 'frontmatter___featuredImage___mtimeMs'
+  | 'frontmatter___featuredImage___ctimeMs'
+  | 'frontmatter___featuredImage___atime'
+  | 'frontmatter___featuredImage___mtime'
+  | 'frontmatter___featuredImage___ctime'
+  | 'frontmatter___featuredImage___birthtime'
+  | 'frontmatter___featuredImage___birthtimeMs'
+  | 'frontmatter___featuredImage___blksize'
+  | 'frontmatter___featuredImage___blocks'
+  | 'frontmatter___featuredImage___publicURL'
+  | 'frontmatter___featuredImage___childImageSharp___id'
+  | 'frontmatter___featuredImage___childImageSharp___children'
+  | 'frontmatter___featuredImage___id'
+  | 'frontmatter___featuredImage___parent___id'
+  | 'frontmatter___featuredImage___parent___children'
+  | 'frontmatter___featuredImage___children'
+  | 'frontmatter___featuredImage___children___id'
+  | 'frontmatter___featuredImage___children___children'
+  | 'frontmatter___featuredImage___internal___content'
+  | 'frontmatter___featuredImage___internal___contentDigest'
+  | 'frontmatter___featuredImage___internal___description'
+  | 'frontmatter___featuredImage___internal___fieldOwners'
+  | 'frontmatter___featuredImage___internal___ignoreType'
+  | 'frontmatter___featuredImage___internal___mediaType'
+  | 'frontmatter___featuredImage___internal___owner'
+  | 'frontmatter___featuredImage___internal___type'
+  | 'frontmatter___featuredImage___childMarkdownRemark___id'
+  | 'frontmatter___featuredImage___childMarkdownRemark___excerpt'
+  | 'frontmatter___featuredImage___childMarkdownRemark___rawMarkdownBody'
+  | 'frontmatter___featuredImage___childMarkdownRemark___fileAbsolutePath'
+  | 'frontmatter___featuredImage___childMarkdownRemark___html'
+  | 'frontmatter___featuredImage___childMarkdownRemark___htmlAst'
+  | 'frontmatter___featuredImage___childMarkdownRemark___excerptAst'
+  | 'frontmatter___featuredImage___childMarkdownRemark___headings'
+  | 'frontmatter___featuredImage___childMarkdownRemark___timeToRead'
+  | 'frontmatter___featuredImage___childMarkdownRemark___tableOfContents'
+  | 'frontmatter___featuredImage___childMarkdownRemark___children'
   | 'excerpt'
   | 'rawMarkdownBody'
   | 'fileAbsolutePath'
@@ -1585,6 +1684,8 @@ export type MarkdownRemarkFrontmatter = {
   title?: Maybe<Scalars['String']>;
   slug?: Maybe<Scalars['String']>;
   date?: Maybe<Scalars['Date']>;
+  category?: Maybe<Scalars['String']>;
+  featuredImage?: Maybe<File>;
 };
 
 
@@ -1599,6 +1700,8 @@ export type MarkdownRemarkFrontmatterFilterInput = {
   title?: Maybe<StringQueryOperatorInput>;
   slug?: Maybe<StringQueryOperatorInput>;
   date?: Maybe<DateQueryOperatorInput>;
+  category?: Maybe<StringQueryOperatorInput>;
+  featuredImage?: Maybe<FileFilterInput>;
 };
 
 export type MarkdownRemarkGroupConnection = {
@@ -1803,15 +1906,15 @@ export type QuerySitePageArgs = {
   internalComponentName?: Maybe<StringQueryOperatorInput>;
   componentChunkName?: Maybe<StringQueryOperatorInput>;
   matchPath?: Maybe<StringQueryOperatorInput>;
-  id?: Maybe<StringQueryOperatorInput>;
-  parent?: Maybe<NodeFilterInput>;
-  children?: Maybe<NodeFilterListInput>;
-  internal?: Maybe<InternalFilterInput>;
   isCreatedByStatefulCreatePages?: Maybe<BooleanQueryOperatorInput>;
   context?: Maybe<SitePageContextFilterInput>;
   pluginCreator?: Maybe<SitePluginFilterInput>;
   pluginCreatorId?: Maybe<StringQueryOperatorInput>;
   componentPath?: Maybe<StringQueryOperatorInput>;
+  id?: Maybe<StringQueryOperatorInput>;
+  parent?: Maybe<NodeFilterInput>;
+  children?: Maybe<NodeFilterListInput>;
+  internal?: Maybe<InternalFilterInput>;
 };
 
 
@@ -1828,8 +1931,6 @@ export type QuerySiteArgs = {
   siteMetadata?: Maybe<SiteSiteMetadataFilterInput>;
   port?: Maybe<IntQueryOperatorInput>;
   host?: Maybe<StringQueryOperatorInput>;
-  polyfill?: Maybe<BooleanQueryOperatorInput>;
-  pathPrefix?: Maybe<StringQueryOperatorInput>;
   id?: Maybe<StringQueryOperatorInput>;
   parent?: Maybe<NodeFilterInput>;
   children?: Maybe<NodeFilterListInput>;
@@ -1940,8 +2041,6 @@ export type Site = Node & {
   siteMetadata?: Maybe<SiteSiteMetadata>;
   port?: Maybe<Scalars['Int']>;
   host?: Maybe<Scalars['String']>;
-  polyfill?: Maybe<Scalars['Boolean']>;
-  pathPrefix?: Maybe<Scalars['String']>;
   id: Scalars['ID'];
   parent?: Maybe<Node>;
   children: Array<Node>;
@@ -2144,8 +2243,6 @@ export type SiteFieldsEnum =
   | 'siteMetadata___author'
   | 'port'
   | 'host'
-  | 'polyfill'
-  | 'pathPrefix'
   | 'id'
   | 'parent___id'
   | 'parent___parent___id'
@@ -2238,8 +2335,6 @@ export type SiteFilterInput = {
   siteMetadata?: Maybe<SiteSiteMetadataFilterInput>;
   port?: Maybe<IntQueryOperatorInput>;
   host?: Maybe<StringQueryOperatorInput>;
-  polyfill?: Maybe<BooleanQueryOperatorInput>;
-  pathPrefix?: Maybe<StringQueryOperatorInput>;
   id?: Maybe<StringQueryOperatorInput>;
   parent?: Maybe<NodeFilterInput>;
   children?: Maybe<NodeFilterListInput>;
@@ -2261,15 +2356,15 @@ export type SitePage = Node & {
   internalComponentName: Scalars['String'];
   componentChunkName: Scalars['String'];
   matchPath?: Maybe<Scalars['String']>;
-  id: Scalars['ID'];
-  parent?: Maybe<Node>;
-  children: Array<Node>;
-  internal: Internal;
   isCreatedByStatefulCreatePages?: Maybe<Scalars['Boolean']>;
   context?: Maybe<SitePageContext>;
   pluginCreator?: Maybe<SitePlugin>;
   pluginCreatorId?: Maybe<Scalars['String']>;
   componentPath?: Maybe<Scalars['String']>;
+  id: Scalars['ID'];
+  parent?: Maybe<Node>;
+  children: Array<Node>;
+  internal: Internal;
 };
 
 export type SitePageConnection = {
@@ -2313,6 +2408,97 @@ export type SitePageFieldsEnum =
   | 'internalComponentName'
   | 'componentChunkName'
   | 'matchPath'
+  | 'isCreatedByStatefulCreatePages'
+  | 'context___slug'
+  | 'pluginCreator___id'
+  | 'pluginCreator___parent___id'
+  | 'pluginCreator___parent___parent___id'
+  | 'pluginCreator___parent___parent___children'
+  | 'pluginCreator___parent___children'
+  | 'pluginCreator___parent___children___id'
+  | 'pluginCreator___parent___children___children'
+  | 'pluginCreator___parent___internal___content'
+  | 'pluginCreator___parent___internal___contentDigest'
+  | 'pluginCreator___parent___internal___description'
+  | 'pluginCreator___parent___internal___fieldOwners'
+  | 'pluginCreator___parent___internal___ignoreType'
+  | 'pluginCreator___parent___internal___mediaType'
+  | 'pluginCreator___parent___internal___owner'
+  | 'pluginCreator___parent___internal___type'
+  | 'pluginCreator___children'
+  | 'pluginCreator___children___id'
+  | 'pluginCreator___children___parent___id'
+  | 'pluginCreator___children___parent___children'
+  | 'pluginCreator___children___children'
+  | 'pluginCreator___children___children___id'
+  | 'pluginCreator___children___children___children'
+  | 'pluginCreator___children___internal___content'
+  | 'pluginCreator___children___internal___contentDigest'
+  | 'pluginCreator___children___internal___description'
+  | 'pluginCreator___children___internal___fieldOwners'
+  | 'pluginCreator___children___internal___ignoreType'
+  | 'pluginCreator___children___internal___mediaType'
+  | 'pluginCreator___children___internal___owner'
+  | 'pluginCreator___children___internal___type'
+  | 'pluginCreator___internal___content'
+  | 'pluginCreator___internal___contentDigest'
+  | 'pluginCreator___internal___description'
+  | 'pluginCreator___internal___fieldOwners'
+  | 'pluginCreator___internal___ignoreType'
+  | 'pluginCreator___internal___mediaType'
+  | 'pluginCreator___internal___owner'
+  | 'pluginCreator___internal___type'
+  | 'pluginCreator___resolve'
+  | 'pluginCreator___name'
+  | 'pluginCreator___version'
+  | 'pluginCreator___pluginOptions___plugins'
+  | 'pluginCreator___pluginOptions___plugins___resolve'
+  | 'pluginCreator___pluginOptions___plugins___id'
+  | 'pluginCreator___pluginOptions___plugins___name'
+  | 'pluginCreator___pluginOptions___plugins___version'
+  | 'pluginCreator___pluginOptions___plugins___browserAPIs'
+  | 'pluginCreator___pluginOptions___plugins___pluginFilepath'
+  | 'pluginCreator___pluginOptions___name'
+  | 'pluginCreator___pluginOptions___path'
+  | 'pluginCreator___pluginOptions___short_name'
+  | 'pluginCreator___pluginOptions___start_url'
+  | 'pluginCreator___pluginOptions___background_color'
+  | 'pluginCreator___pluginOptions___theme_color'
+  | 'pluginCreator___pluginOptions___display'
+  | 'pluginCreator___pluginOptions___icon'
+  | 'pluginCreator___pluginOptions___cache_busting_mode'
+  | 'pluginCreator___pluginOptions___include_favicon'
+  | 'pluginCreator___pluginOptions___legacy'
+  | 'pluginCreator___pluginOptions___theme_color_in_head'
+  | 'pluginCreator___pluginOptions___cacheDigest'
+  | 'pluginCreator___pluginOptions____'
+  | 'pluginCreator___pluginOptions___maxWidth'
+  | 'pluginCreator___pluginOptions___tracedSVG'
+  | 'pluginCreator___pluginOptions___fileName'
+  | 'pluginCreator___pluginOptions___codegen'
+  | 'pluginCreator___pluginOptions___pathCheck'
+  | 'pluginCreator___nodeAPIs'
+  | 'pluginCreator___browserAPIs'
+  | 'pluginCreator___ssrAPIs'
+  | 'pluginCreator___pluginFilepath'
+  | 'pluginCreator___packageJson___name'
+  | 'pluginCreator___packageJson___description'
+  | 'pluginCreator___packageJson___version'
+  | 'pluginCreator___packageJson___main'
+  | 'pluginCreator___packageJson___author'
+  | 'pluginCreator___packageJson___license'
+  | 'pluginCreator___packageJson___dependencies'
+  | 'pluginCreator___packageJson___dependencies___name'
+  | 'pluginCreator___packageJson___dependencies___version'
+  | 'pluginCreator___packageJson___devDependencies'
+  | 'pluginCreator___packageJson___devDependencies___name'
+  | 'pluginCreator___packageJson___devDependencies___version'
+  | 'pluginCreator___packageJson___peerDependencies'
+  | 'pluginCreator___packageJson___peerDependencies___name'
+  | 'pluginCreator___packageJson___peerDependencies___version'
+  | 'pluginCreator___packageJson___keywords'
+  | 'pluginCreatorId'
+  | 'componentPath'
   | 'id'
   | 'parent___id'
   | 'parent___parent___id'
@@ -2398,88 +2584,7 @@ export type SitePageFieldsEnum =
   | 'internal___ignoreType'
   | 'internal___mediaType'
   | 'internal___owner'
-  | 'internal___type'
-  | 'isCreatedByStatefulCreatePages'
-  | 'context___slug'
-  | 'pluginCreator___id'
-  | 'pluginCreator___parent___id'
-  | 'pluginCreator___parent___parent___id'
-  | 'pluginCreator___parent___parent___children'
-  | 'pluginCreator___parent___children'
-  | 'pluginCreator___parent___children___id'
-  | 'pluginCreator___parent___children___children'
-  | 'pluginCreator___parent___internal___content'
-  | 'pluginCreator___parent___internal___contentDigest'
-  | 'pluginCreator___parent___internal___description'
-  | 'pluginCreator___parent___internal___fieldOwners'
-  | 'pluginCreator___parent___internal___ignoreType'
-  | 'pluginCreator___parent___internal___mediaType'
-  | 'pluginCreator___parent___internal___owner'
-  | 'pluginCreator___parent___internal___type'
-  | 'pluginCreator___children'
-  | 'pluginCreator___children___id'
-  | 'pluginCreator___children___parent___id'
-  | 'pluginCreator___children___parent___children'
-  | 'pluginCreator___children___children'
-  | 'pluginCreator___children___children___id'
-  | 'pluginCreator___children___children___children'
-  | 'pluginCreator___children___internal___content'
-  | 'pluginCreator___children___internal___contentDigest'
-  | 'pluginCreator___children___internal___description'
-  | 'pluginCreator___children___internal___fieldOwners'
-  | 'pluginCreator___children___internal___ignoreType'
-  | 'pluginCreator___children___internal___mediaType'
-  | 'pluginCreator___children___internal___owner'
-  | 'pluginCreator___children___internal___type'
-  | 'pluginCreator___internal___content'
-  | 'pluginCreator___internal___contentDigest'
-  | 'pluginCreator___internal___description'
-  | 'pluginCreator___internal___fieldOwners'
-  | 'pluginCreator___internal___ignoreType'
-  | 'pluginCreator___internal___mediaType'
-  | 'pluginCreator___internal___owner'
-  | 'pluginCreator___internal___type'
-  | 'pluginCreator___resolve'
-  | 'pluginCreator___name'
-  | 'pluginCreator___version'
-  | 'pluginCreator___pluginOptions___name'
-  | 'pluginCreator___pluginOptions___path'
-  | 'pluginCreator___pluginOptions___short_name'
-  | 'pluginCreator___pluginOptions___start_url'
-  | 'pluginCreator___pluginOptions___background_color'
-  | 'pluginCreator___pluginOptions___theme_color'
-  | 'pluginCreator___pluginOptions___display'
-  | 'pluginCreator___pluginOptions___icon'
-  | 'pluginCreator___pluginOptions___cache_busting_mode'
-  | 'pluginCreator___pluginOptions___include_favicon'
-  | 'pluginCreator___pluginOptions___legacy'
-  | 'pluginCreator___pluginOptions___theme_color_in_head'
-  | 'pluginCreator___pluginOptions___cacheDigest'
-  | 'pluginCreator___pluginOptions____'
-  | 'pluginCreator___pluginOptions___fileName'
-  | 'pluginCreator___pluginOptions___pathCheck'
-  | 'pluginCreator___nodeAPIs'
-  | 'pluginCreator___browserAPIs'
-  | 'pluginCreator___ssrAPIs'
-  | 'pluginCreator___pluginFilepath'
-  | 'pluginCreator___packageJson___name'
-  | 'pluginCreator___packageJson___description'
-  | 'pluginCreator___packageJson___version'
-  | 'pluginCreator___packageJson___main'
-  | 'pluginCreator___packageJson___author'
-  | 'pluginCreator___packageJson___license'
-  | 'pluginCreator___packageJson___dependencies'
-  | 'pluginCreator___packageJson___dependencies___name'
-  | 'pluginCreator___packageJson___dependencies___version'
-  | 'pluginCreator___packageJson___devDependencies'
-  | 'pluginCreator___packageJson___devDependencies___name'
-  | 'pluginCreator___packageJson___devDependencies___version'
-  | 'pluginCreator___packageJson___peerDependencies'
-  | 'pluginCreator___packageJson___peerDependencies___name'
-  | 'pluginCreator___packageJson___peerDependencies___version'
-  | 'pluginCreator___packageJson___keywords'
-  | 'pluginCreatorId'
-  | 'componentPath';
+  | 'internal___type';
 
 export type SitePageFilterInput = {
   path?: Maybe<StringQueryOperatorInput>;
@@ -2487,15 +2592,15 @@ export type SitePageFilterInput = {
   internalComponentName?: Maybe<StringQueryOperatorInput>;
   componentChunkName?: Maybe<StringQueryOperatorInput>;
   matchPath?: Maybe<StringQueryOperatorInput>;
-  id?: Maybe<StringQueryOperatorInput>;
-  parent?: Maybe<NodeFilterInput>;
-  children?: Maybe<NodeFilterListInput>;
-  internal?: Maybe<InternalFilterInput>;
   isCreatedByStatefulCreatePages?: Maybe<BooleanQueryOperatorInput>;
   context?: Maybe<SitePageContextFilterInput>;
   pluginCreator?: Maybe<SitePluginFilterInput>;
   pluginCreatorId?: Maybe<StringQueryOperatorInput>;
   componentPath?: Maybe<StringQueryOperatorInput>;
+  id?: Maybe<StringQueryOperatorInput>;
+  parent?: Maybe<NodeFilterInput>;
+  children?: Maybe<NodeFilterListInput>;
+  internal?: Maybe<InternalFilterInput>;
 };
 
 export type SitePageGroupConnection = {
@@ -2645,6 +2750,15 @@ export type SitePluginFieldsEnum =
   | 'resolve'
   | 'name'
   | 'version'
+  | 'pluginOptions___plugins'
+  | 'pluginOptions___plugins___resolve'
+  | 'pluginOptions___plugins___id'
+  | 'pluginOptions___plugins___name'
+  | 'pluginOptions___plugins___version'
+  | 'pluginOptions___plugins___pluginOptions___maxWidth'
+  | 'pluginOptions___plugins___pluginOptions___tracedSVG'
+  | 'pluginOptions___plugins___browserAPIs'
+  | 'pluginOptions___plugins___pluginFilepath'
   | 'pluginOptions___name'
   | 'pluginOptions___path'
   | 'pluginOptions___short_name'
@@ -2659,7 +2773,10 @@ export type SitePluginFieldsEnum =
   | 'pluginOptions___theme_color_in_head'
   | 'pluginOptions___cacheDigest'
   | 'pluginOptions____'
+  | 'pluginOptions___maxWidth'
+  | 'pluginOptions___tracedSVG'
   | 'pluginOptions___fileName'
+  | 'pluginOptions___codegen'
   | 'pluginOptions___pathCheck'
   | 'nodeAPIs'
   | 'browserAPIs'
@@ -2776,6 +2893,7 @@ export type SitePluginPackageJsonPeerDependenciesFilterListInput = {
 };
 
 export type SitePluginPluginOptions = {
+  plugins?: Maybe<Array<Maybe<SitePluginPluginOptionsPlugins>>>;
   name?: Maybe<Scalars['String']>;
   path?: Maybe<Scalars['String']>;
   short_name?: Maybe<Scalars['String']>;
@@ -2790,11 +2908,15 @@ export type SitePluginPluginOptions = {
   theme_color_in_head?: Maybe<Scalars['Boolean']>;
   cacheDigest?: Maybe<Scalars['String']>;
   _?: Maybe<Scalars['String']>;
+  maxWidth?: Maybe<Scalars['Int']>;
+  tracedSVG?: Maybe<Scalars['Boolean']>;
   fileName?: Maybe<Scalars['String']>;
+  codegen?: Maybe<Scalars['Boolean']>;
   pathCheck?: Maybe<Scalars['Boolean']>;
 };
 
 export type SitePluginPluginOptionsFilterInput = {
+  plugins?: Maybe<SitePluginPluginOptionsPluginsFilterListInput>;
   name?: Maybe<StringQueryOperatorInput>;
   path?: Maybe<StringQueryOperatorInput>;
   short_name?: Maybe<StringQueryOperatorInput>;
@@ -2809,8 +2931,45 @@ export type SitePluginPluginOptionsFilterInput = {
   theme_color_in_head?: Maybe<BooleanQueryOperatorInput>;
   cacheDigest?: Maybe<StringQueryOperatorInput>;
   _?: Maybe<StringQueryOperatorInput>;
+  maxWidth?: Maybe<IntQueryOperatorInput>;
+  tracedSVG?: Maybe<BooleanQueryOperatorInput>;
   fileName?: Maybe<StringQueryOperatorInput>;
+  codegen?: Maybe<BooleanQueryOperatorInput>;
   pathCheck?: Maybe<BooleanQueryOperatorInput>;
+};
+
+export type SitePluginPluginOptionsPlugins = {
+  resolve?: Maybe<Scalars['String']>;
+  id?: Maybe<Scalars['String']>;
+  name?: Maybe<Scalars['String']>;
+  version?: Maybe<Scalars['String']>;
+  pluginOptions?: Maybe<SitePluginPluginOptionsPluginsPluginOptions>;
+  browserAPIs?: Maybe<Array<Maybe<Scalars['String']>>>;
+  pluginFilepath?: Maybe<Scalars['String']>;
+};
+
+export type SitePluginPluginOptionsPluginsFilterInput = {
+  resolve?: Maybe<StringQueryOperatorInput>;
+  id?: Maybe<StringQueryOperatorInput>;
+  name?: Maybe<StringQueryOperatorInput>;
+  version?: Maybe<StringQueryOperatorInput>;
+  pluginOptions?: Maybe<SitePluginPluginOptionsPluginsPluginOptionsFilterInput>;
+  browserAPIs?: Maybe<StringQueryOperatorInput>;
+  pluginFilepath?: Maybe<StringQueryOperatorInput>;
+};
+
+export type SitePluginPluginOptionsPluginsFilterListInput = {
+  elemMatch?: Maybe<SitePluginPluginOptionsPluginsFilterInput>;
+};
+
+export type SitePluginPluginOptionsPluginsPluginOptions = {
+  maxWidth?: Maybe<Scalars['Int']>;
+  tracedSVG?: Maybe<Scalars['Boolean']>;
+};
+
+export type SitePluginPluginOptionsPluginsPluginOptionsFilterInput = {
+  maxWidth?: Maybe<IntQueryOperatorInput>;
+  tracedSVG?: Maybe<BooleanQueryOperatorInput>;
 };
 
 export type SitePluginSortInput = {
@@ -2865,7 +3024,10 @@ export type Unnamed_3_QueryVariables = Exact<{
 
 export type Unnamed_3_Query = { markdownRemark?: Maybe<(
     Pick<MarkdownRemark, 'html'>
-    & { frontmatter?: Maybe<Pick<MarkdownRemarkFrontmatter, 'date' | 'slug' | 'title'>> }
+    & { frontmatter?: Maybe<(
+      Pick<MarkdownRemarkFrontmatter, 'date' | 'slug' | 'title'>
+      & { featuredImage?: Maybe<{ childImageSharp?: Maybe<{ fluid?: Maybe<GatsbyImageSharpFluidFragment> }> }> }
+    )> }
   )> };
 
 export type GatsbyImageSharpFixedFragment = Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet'>;

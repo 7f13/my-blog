@@ -18,14 +18,14 @@ body {
     width: 300px;
   }
 }
-// .blog-post-content {
-//   overflow-wrap: break-word;
-//   padding: 0 1rem;
-//   position: relative;
-//   @media only screen and (max-width: 640) {
-//     .gatsby-highlight {
-//       position: absolute;
-//       width: 100vw;
-//     }
-//   }
-// }
+.blog-post-container {
+  .gatsby-image-wrapper {
+    border-radius: 0.3em;
+  }
+  .featured-img {
+    height: 30vh;
+  }
+  .blog-post-content {
+    overflow-wrap: break-word;
+  }
+}
