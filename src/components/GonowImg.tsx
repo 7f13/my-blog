@@ -4,10 +4,10 @@ import Img from "gatsby-image"
 interface Props {
   className?: string
 }
-export const ProfileImg: React.FC<Props> = ({ className }) => {
+export const GonowImg: React.FC<Props> = ({ className }) => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "profile.jpg" }) {
+      file(relativePath: { eq: "gonow.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -19,7 +19,7 @@ export const ProfileImg: React.FC<Props> = ({ className }) => {
   return (
     <Img
       fluid={data.file.childImageSharp.fluid}
-      alt="profile picture"
+      alt="gonow landing page"
       draggable={false}
       fadeIn={false}
       className={className}
