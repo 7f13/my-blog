@@ -13,7 +13,7 @@ const IndexPage = (props: Props) => {
       <SEO title="Blogs" />
       <div className="flex flex-col sm:flex-row justify-evenly items-center mb-6">
         <div>
-          <h3 className="text-4xl  sm:mb-6 text-center">Blogs</h3>
+          <h2 className="text-4xl  sm:mb-6 text-center">Blogs</h2>
           {/* 主要なカテゴリ */}
           <div className="flex items-center">
             <p className="py-1 px-2 underline cursor-pointer hover:text-teal-400">
