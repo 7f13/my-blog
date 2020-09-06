@@ -14,6 +14,13 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `contents`,
+        path: `${__dirname}/contents`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -35,13 +42,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-postcss`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `contents`,
-        path: `${__dirname}/src/contents`,
-      },
-    },
+
     {
       resolve: `gatsby-transformer-remark`,
       options: {

@@ -13,12 +13,12 @@ export const Profile = () => {
             <div>
               <p className="mb-2 sm:text-2xl">Kosei Sakaguchi</p>
               <p className="text-xs mb-2 sm:text-base">
-                WEBエンジニア / WEBデザイナー
+                フロントエンドエンジニア / WEBデザイナー
               </p>
             </div>
           </div>
           <p className="text-sm sm:text-base">
-            福岡市を拠点に、フリーランスとしてWEBサイト制作やWEBシステム開発を行っています。フロントエンドと新しい技術と猫とHipHopが好きです！制作実績は
+            福岡市を拠点に、フリーランスとしてWEBサイト制作やWEBアプリケーション開発を行っています。フロントエンドと新しい技術と猫とHipHopが好きです！制作実績は
             <Link to="/works" className="underline text-gray-800">
               Works
             </Link>

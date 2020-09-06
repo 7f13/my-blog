@@ -16,7 +16,7 @@ export const WorkCard: React.FC<Props> = ({
   if (reverse)
     return (
       <div
-        className="flex flex-col-reverse mb-6 hover:shadow-xl py-5 shadow rounded hover:scale-105 transition duration-500 ease-in-out transform sm:flex-row sm:justify-evenly
+        className="flex flex-col-reverse mb-6 hover:shadow-xl py-5 rounded hover:scale-105 transition duration-500 ease-in-out transform sm:flex-row sm:justify-evenly
         items-center"
       >
         {children}
@@ -35,7 +35,7 @@ export const WorkCard: React.FC<Props> = ({
   else
     return (
       <div
-        className="flex flex-col mb-6 hover:shadow-xl py-5 shadow rounded hover:scale-105 transition duration-500 ease-in-out transform sm:flex-row sm:justify-evenly
+        className="flex flex-col mb-6 hover:shadow-xl py-5 rounded hover:scale-105 transition duration-500 ease-in-out transform sm:flex-row sm:justify-evenly
           items-center"
       >
         <div className="flex flex-col justify-between w-4/5 mb-4 sm:w-5/12">
