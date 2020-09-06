@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 interface Props {
-  className: string
+  className?: string
 }
 export const ProfileImg: React.FC<Props> = ({ className }) => {
   const data = useStaticQuery(graphql`
