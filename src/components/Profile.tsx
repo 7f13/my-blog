@@ -19,7 +19,7 @@ export const Profile = () => {
           </div>
           <p className="text-sm sm:text-base">
             福岡市を拠点に、フリーランスとしてWEBサイト制作やWEBシステム開発を行っています。フロントエンドと新しい技術と猫とHipHopが好きです！制作実績は
-            <Link to="works" className="underline text-gray-800">
+            <Link to="/works" className="underline text-gray-800">
               Works
             </Link>
             へどうぞ！

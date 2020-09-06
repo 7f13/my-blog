@@ -17,21 +17,21 @@ const SnsLink = ({ link }: SnsLinkProps) => {
   const className = "w-5 h-5 mr-3 fill-current text-black hover:text-teal-400"
   if (SERVICE_TYPE.TWITTER === service)
     return (
-      <Link to={to}>
+      <a href={to} target="_blank">
         <TwitterIcon className={className} />
-      </Link>
+      </a>
     )
   else if (SERVICE_TYPE.INSTAGRAM === service)
     return (
-      <Link to={to}>
+      <a href={to} target="_blank">
         <InstagramIcon className={className} />
-      </Link>
+      </a>
     )
   else if (SERVICE_TYPE.GITHUB === service)
     return (
-      <Link to={to}>
+      <a href={to} target="_blank">
         <GitHubIcon className={className} />
-      </Link>
+      </a>
     )
   else return null
 }

@@ -9,7 +9,7 @@ interface Props {
 }
 export const Layout: React.FC<Props> = ({ children }) => {
   return (
-    <div className="max-w-4xl px-2 sm:px-4 mx-auto tracking-wider">
+    <div className="max-w-4xl px-2 sm:px-4 mx-auto tracking-wider ">
       <Helmet>
         <link
           href="https://fonts.googleapis.com/css2?family=Dosis&display=swap"

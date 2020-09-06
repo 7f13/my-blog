@@ -4,7 +4,7 @@ import { MarkdownRemark } from "@/gatsby-graphql"
 import { BlogPostCard } from "@/components/BlogPostCard"
 const LoadButton = () => {
   return (
-    <button className="text-white rounded shadow-lg bg-black py-2 px-6 sm:py-4 sm:px-12 block mx-auto my-16 text-sm hover:bg-teal-300 focus:bg-teal-400 focus:outline-none">
+    <button className="text-white rounded shadow-lg bg-black py-2 px-6 sm:px-8 block mx-auto my-16 text-sm hover:bg-teal-300 focus:bg-teal-400 focus:outline-none">
       More
     </button>
   )
@@ -33,7 +33,7 @@ export const AllBlogPosts = () => {
           <BlogPostCard key={node.frontmatter!.slug} post={node.frontmatter!} />
         ))}
       </div>
-      <LoadButton />
+      {/* <LoadButton /> */}
     </>
   )
 }
