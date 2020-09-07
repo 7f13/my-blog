@@ -25,6 +25,9 @@ export const SEO: React.FC<SEOProps> = props => {
         siteMetadata {
           title
           description
+          author
+          image
+          siteUrl
         }
       }
     }
@@ -40,7 +43,6 @@ export const SEO: React.FC<SEOProps> = props => {
     meta = [],
     keywords = [],
     image,
-    summary_large_image,
   } = siteMetadata
   const siteTitle = props.title || title
   const siteDescription = props.description || description
@@ -48,6 +50,7 @@ export const SEO: React.FC<SEOProps> = props => {
   const siteAuthor = props.author || author
   const siteImage = props.image || image
   const siteKeywords = [...keywords, props.keywords].join(",")
+  const summary_large_image = props.summary_large_image
   const metaData = [
     {
       name: "canonical",

@@ -2,13 +2,13 @@ const path = require("path")
 module.exports = {
   siteMetadata: {
     title: `Lepus`,
-    description: `技術系個人ブログ。`,
+    description: `福岡在住のフロントエンドエンジニアが運営する技術系個人ブログ。Gatsby、Next.js、TypeScriptとかJAMstackについて。`,
     author: `@Sakaguchi01628`,
     image: "/images/space-craft.png",
     siteUrl: "https://lepus.netlify.app/",
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-react-helmet`,w
     {
       resolve: `gatsby-source-filesystem`,
       options: {
