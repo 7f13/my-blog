@@ -4,6 +4,7 @@ module.exports = {
     title: `Lepus`,
     description: `技術系個人ブログ。`,
     author: `@Sakaguchi01628`,
+    image: "/images/space-craft.png",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -26,8 +27,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Lepus`,
+        short_name: `Lepus`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,

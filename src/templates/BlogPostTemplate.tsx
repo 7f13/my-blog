@@ -20,7 +20,10 @@ const BlogPostTemplate: React.FC<Props> = ({ data }) => {
     frontmatter!.featuredImage!.childImageSharp!.fluid
   return (
     <BlogPageLayout>
-      <SEO title={frontmatter!.title!} />
+      <SEO
+        title={frontmatter!.title!}
+        image={frontmatter!.featuredImage!.absolutePath}
+      />
       <div className="blog-post-page">
         <div className="blog-post-container ">
           <Img
@@ -77,6 +80,7 @@ export const pageQuery = graphql`
         title
         category
         featuredImage {
+          absolutePath
           childImageSharp {
             fluid(maxWidth: 1128) {
               ...GatsbyImageSharpFluid
