@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import { MarkdownRemark } from "@/gatsby-graphql"
+import { MarkdownRemark } from "@/types/gatsby-graphql"
 import { BlogPostCard } from "@/components/BlogPostCard"
 const LoadButton = () => {
   return (

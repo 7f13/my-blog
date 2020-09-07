@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { MarkdownRemarkFrontmatter } from "@/gatsby-graphql"
+import { MarkdownRemarkFrontmatter } from "@/types/gatsby-graphql"
 interface Props {
   post: MarkdownRemarkFrontmatter
 }

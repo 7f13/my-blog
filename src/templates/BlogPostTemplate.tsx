@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, PageRendererProps } from "gatsby"
 import { useWindowSize } from "react-use"
-import { Query } from "@/gatsby-graphql"
+import { Query } from "@/types/gatsby-graphql"
 import { BlogPageLayout } from "@/components/BlogPageLayout"
 import { Layout } from "@/components/Layout"
 import { SEO } from "@/components/SEO"
