@@ -15,7 +15,6 @@ type SEOProps = {
   keywords?: string[]
   meta?: MetaItem[]
   image?: string
-  summary_large_image?: string
 }
 
 export const SEO: React.FC<SEOProps> = props => {
@@ -50,7 +49,6 @@ export const SEO: React.FC<SEOProps> = props => {
   const siteAuthor = props.author || author
   const siteImage = props.image || image
   const siteKeywords = [...keywords, props.keywords].join(",")
-  const summary_large_image = props.summary_large_image
   const metaData = [
     {
       name: "canonical",
@@ -86,7 +84,7 @@ export const SEO: React.FC<SEOProps> = props => {
     },
     {
       name: "twitter:card",
-      content: summary_large_image,
+      content: "summary_large_image",
     },
     {
       name: "twitter:creator",
