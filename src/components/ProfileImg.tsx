@@ -22,6 +22,7 @@ export const ProfileImg: React.FC<Props> = ({ className }) => {
       alt="profile picture"
       draggable={false}
       fadeIn={false}
+      loading="eager"
       className={className}
     />
   )

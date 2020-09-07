@@ -32,6 +32,7 @@ const BlogPostTemplate: React.FC<Props> = ({ data }) => {
         featured-img "
             fadeIn={false}
             draggable={false}
+            loading="eager"
           />
           <div className="blog-post max-w-4xl sm:px-6">
             {/* カテゴリ */}

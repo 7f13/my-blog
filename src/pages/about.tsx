@@ -59,10 +59,11 @@ export default function AboutPage() {
         <div>
           <p className="text-xl text-center ">Kosei Sakaguchi</p>
           <p className="text-gray-700 text-md text-center mb-6">
-            WEBエンジニア
+            フロントエンドエンジニア / WEBデザイナー
           </p>
           <p className="mb-6 sm:px-20">
-            福岡市を拠点として活動するフリーランスのフロントエンジニア/デザイナーです。
+            福岡市を拠点として活動するフリーランスのフロントエンジニア /
+            WEBデザイナーです。
             Next.jsやGatsby.js、TypeScriptをメイン技術として使用しています。
             <br />
             <br />

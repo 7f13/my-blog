@@ -4,19 +4,22 @@ import { HEADER_PATHS } from "@/constants/paths"
 import { Link } from "gatsby"
 import MenuIcon from "@/assets/menu.svg"
 import { MobileMenu } from "@/components/MobileMenu"
+import { isMobile } from "react-device-detect"
 export const HeaderMenu = () => {
   const [isMobileMenuOpen, toggleMobileMenuOpen] = useState(false)
 
-  const [isMobile, toggleIsMobile] = useState(true)
+  const [isMobileResponsive, toggleIsMobileResponsive] = useState(isMobile)
   const { width } = useWindowSize()
   useEffect(() => {
-    if (width < 640) {
-      toggleIsMobile(true)
+    if (width > 639) {
+      toggleIsMobileResponsive(false)
+    } else {
+      toggleIsMobileResponsive(true)
     }
   }, [width])
   return (
     <>
-      {isMobile ? (
+      {isMobileResponsive ? (
         <>
           <div
             className="p-2 rounded shadow-lg"
@@ -31,7 +34,6 @@ export const HeaderMenu = () => {
         </>
       ) : (
         <nav className="list-none flex">
-          {/* 右端の要素はmargin rightなし */}
           {HEADER_PATHS.map((path, i) => {
             return HEADER_PATHS.length + 1 !== i ? (
               <Link key={path.to} to={path.to} className="mr-2">
