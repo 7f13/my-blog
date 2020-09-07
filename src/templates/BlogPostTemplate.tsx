@@ -21,7 +21,6 @@ const BlogPostTemplate: React.FC<Props> = ({ data }) => {
   return (
     <BlogPageLayout>
       <SEO title={frontmatter!.title!} />
-      {console.log(frontmatter)}
       <div className="blog-post-page">
         <div className="blog-post-container ">
           <Img

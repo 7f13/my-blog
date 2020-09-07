@@ -4,6 +4,7 @@ date: "2020-09-07"
 title: "Gatsby + TypeScriptでSVGファイルをコンポーネントとしてimport出来るようにする"
 category: ["Gatsby", "TypeScript"]
 featuredImage: F-type-error-svg.png
+published: true
 ---
 
 # 手順
