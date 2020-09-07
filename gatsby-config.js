@@ -8,7 +8,7 @@ module.exports = {
     siteUrl: "https://lepus.netlify.app/",
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,w
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
