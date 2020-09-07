@@ -27,9 +27,12 @@ body {
       h2,
       h3 {
         font-weight: 500;
-        margin: 1rem 0 0.2rem 0;
+        margin: 4rem 0 2rem 0;
+        padding-left: 0.5rem;
+        border-left: 4px solid black;
       }
       h1 {
+        background-color: #edf2f7;
         font-size: 1.25rem;
       }
       h2 {
@@ -49,6 +52,21 @@ body {
           font-size: 1.125rem;
         }
       }
+    }
+    pre {
+      margin: 2rem 0;
+    }
+    .gatsby-resp-image-wrapper {
+      margin: 2rem 0;
+    }
+    .gatsby-resp-image-image {
+      border-radius: 0.3em;
+    }
+    code {
+      font-size: 14px;
+    }
+    .language-text {
+      padding: 4px 6px;
     }
     .table-of-content {
       position: sticky;
@@ -73,7 +91,7 @@ body {
     border-radius: 0.3em;
   }
   .featured-img {
-    height: 30vh;
+    max-height: 488px;
   }
 }
 .gatsby-highlight {
@@ -98,4 +116,24 @@ body {
   @media only screen and (min-width: 639px) {
     width: 300px;
   }
+}
+.gatsby-highlight-code-line {
+  background-color: #292929;
+  display: block;
+  margin-right: -1em;
+  margin-left: -16px;
+  padding-right: 1em;
+  padding-left: 10px;
+  border-left: 6px solid rgb(94, 146, 189);
+}
+
+.line-numbers {
+  .gatsby-highlight-code-line {
+    margin-left: -62px;
+    padding-left: 56px;
+  }
+}
+
+.line-numbers-rows {
+  margin: 16px;
 }

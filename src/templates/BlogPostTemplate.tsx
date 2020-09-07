@@ -48,7 +48,7 @@ const BlogPostTemplate: React.FC<Props> = ({ data }) => {
             </p>
 
             <div
-              className="blog-post-content my-12 text-sm sm:text-base"
+              className="blog-post-content my-12 text-sm sm:text-base leading-loose"
               dangerouslySetInnerHTML={{ __html: html! }}
             />
             {/* 目次 */}
@@ -58,9 +58,9 @@ const BlogPostTemplate: React.FC<Props> = ({ data }) => {
                   dangerouslySetInnerHTML={{ __html: tableOfContents! }}
                 />
               )} */}
+            <Profile />
           </div>
         </div>
-        <Profile />
       </div>
     </BlogPageLayout>
   )
