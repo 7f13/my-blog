@@ -24,6 +24,7 @@
     "gatsby-source-filesystem": "^2.3.27",
     "gatsby-transformer-remark": "^2.8.32",
     "gatsby-transformer-sharp": "^2.5.13",
+    "generate-robotstxt": "^8.0.3",
     "node-sass": "^4.14.1",
     "prismjs": "^1.21.0",
     "prop-types": "^15.7.2",
