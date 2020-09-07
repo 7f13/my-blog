@@ -6,7 +6,8 @@ import MenuIcon from "@/assets/menu.svg"
 import { MobileMenu } from "@/components/MobileMenu"
 export const HeaderMenu = () => {
   const [isMobileMenuOpen, toggleMobileMenuOpen] = useState(false)
-  const [isMobile, toggleIsMobile] = useState(false)
+
+  const [isMobile, toggleIsMobile] = useState(true)
   const { width } = useWindowSize()
   useEffect(() => {
     if (width < 640) {
