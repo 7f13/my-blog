@@ -5,6 +5,7 @@ module.exports = {
     description: `技術系個人ブログ。`,
     author: `@Sakaguchi01628`,
     image: "/images/space-craft.png",
+    siteUrl: "https://lepus.netlify.app/",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -83,14 +84,6 @@ module.exports = {
           require("tailwindcss"),
           require("./tailwind.config.js"), // Optional: Load custom Tailwind CSS configuration
         ],
-      },
-    },
-    {
-      resolve: "gatsby-plugin-robots-txt",
-      options: {
-        // host: 'https://www.example.com',
-        // sitemap: 'https://www.example.com/sitemap.xml',
-        policy: [{ userAgent: "*", allow: "/" }],
       },
     },
   ],
