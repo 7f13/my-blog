@@ -15,6 +15,7 @@ type SEOProps = {
   keywords?: string[]
   meta?: MetaItem[]
   image?: string
+  summary_large_image?: string
 }
 
 export const SEO: React.FC<SEOProps> = props => {
@@ -39,8 +40,9 @@ export const SEO: React.FC<SEOProps> = props => {
     meta = [],
     keywords = [],
     image,
+    summary_large_image,
   } = siteMetadata
-  const siteTitle = props.title || title
+  const siteTitle = `${props.title} - ${title}`
   const siteDescription = props.description || description
   const siteUrl = props.url || url
   const siteAuthor = props.author || author
@@ -81,7 +83,7 @@ export const SEO: React.FC<SEOProps> = props => {
     },
     {
       name: "twitter:card",
-      content: "summary_large_image",
+      content: summary_large_image,
     },
     {
       name: "twitter:creator",

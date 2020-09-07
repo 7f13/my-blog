@@ -22,7 +22,7 @@ const BlogPostTemplate: React.FC<Props> = ({ data }) => {
     <BlogPageLayout>
       <SEO
         title={frontmatter!.title!}
-        image={frontmatter!.featuredImage!.absolutePath}
+        summary_large_image={frontmatter!.featuredImage!.absolutePath}
       />
       <div className="blog-post-page">
         <div className="blog-post-container ">
