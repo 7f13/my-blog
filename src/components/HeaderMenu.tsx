@@ -17,6 +17,7 @@ export const HeaderMenu = () => {
       toggleIsMobileResponsive(true)
     }
   }, [width])
+  if(typeof window === "undefined") return null
   return (
     <>
       {isMobileResponsive ? (
