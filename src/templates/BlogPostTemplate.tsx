@@ -20,7 +20,7 @@ const BlogPostTemplate: React.FC<Props> = ({ data }) => {
     frontmatter!.featuredImage!.childImageSharp!.fluid
   return (
     <BlogPageLayout>
-      <SEO title={frontmatter!.title!} />
+      <SEO title={`${frontmatter!.title!} - Lepus`} />
       <div className="blog-post-page">
         <div className="blog-post-container ">
           <Img

@@ -6,7 +6,7 @@ import ContactSvg from "@/assets/contact.svg"
 const ContactPage = () => {
   return (
     <Layout>
-      <SEO title="Contact" />
+      <SEO title="Contact - Lepus" />
       <Hero title="Contact">
         <ContactSvg />
       </Hero>

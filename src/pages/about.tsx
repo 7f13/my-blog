@@ -13,7 +13,7 @@ export default function AboutPage() {
   return (
     <Layout>
       <SEO />
-      <Hero title="About" reverse>
+      <Hero title="About - Lepus" reverse>
         <SpaceSvg />
       </Hero>
       <div className="px-2 mx-auto">

@@ -123,7 +123,6 @@ export const SEO: React.FC<SEOProps> = props => {
       <Helmet
         htmlAttributes={{ lang: "jp" }}
         title={siteTitle}
-        titleTemplate={`%s | ${siteMetadata.title}`}
         meta={metaData}
         link={linkData}
       />

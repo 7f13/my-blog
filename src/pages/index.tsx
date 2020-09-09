@@ -10,7 +10,7 @@ interface Props {
 const IndexPage = (props: Props) => {
   return (
     <Layout>
-      <SEO title="Blogs" />
+      <SEO title="Blogs - Lepus" />
       <div className="flex flex-col sm:flex-row justify-evenly items-center mb-6">
         <div>
           <h2 className="text-4xl  sm:mb-6 text-center">Blogs</h2>

@@ -11,7 +11,7 @@ import { PortfolioImg } from "@/components/PortfolioImg"
 export const WorksPage = () => {
   return (
     <Layout>
-      <SEO title="Works" />
+      <SEO title="Works - Lepus" />
       <Hero title="Works" reverse>
         <WorksSvg />
       </Hero>
