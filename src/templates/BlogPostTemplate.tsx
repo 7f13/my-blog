@@ -13,17 +13,14 @@ interface Props extends PageRendererProps {
 }
 const BlogPostTemplate: React.FC<Props> = ({ data }) => {
   const { width } = useWindowSize()
-  const { markdownRemark } = data // data.markdownRemark holds your post data
+  const { markdownRemark } = data
   const { frontmatter, tableOfContents, html } = markdownRemark!
   const featuredImgFluid =
     frontmatter!.featuredImage &&
     frontmatter!.featuredImage!.childImageSharp!.fluid
   return (
     <BlogPageLayout>
-      <SEO
-        title={frontmatter!.title!}
-        image={frontmatter!.featuredImage!.absolutePath}
-      />
+      <SEO title={frontmatter!.title!} />
       <div className="blog-post-page">
         <div className="blog-post-container ">
           <Img
@@ -81,7 +78,6 @@ export const pageQuery = graphql`
         title
         category
         featuredImage {
-          absolutePath
           childImageSharp {
             fluid(maxWidth: 1128) {
               ...GatsbyImageSharpFluid

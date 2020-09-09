@@ -3,10 +3,10 @@ export const HEADER_PATHS = [
     to: "/about",
     displayName: "About",
   },
-  {
-    to: "/categories",
-    displayName: "Category",
-  },
+  // {
+  //   to: "/categories",
+  //   displayName: "Category",
+  // },
   {
     to: "/works",
     displayName: "Works",

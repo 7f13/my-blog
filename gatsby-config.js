@@ -4,7 +4,7 @@ module.exports = {
     title: `Lepus`,
     description: `福岡在住のフロントエンドエンジニアが運営する技術系個人ブログ。Gatsby、Next.js、TypeScriptとかJAMstackについて。`,
     author: `@Sakaguchi01628`,
-    image: "/images/space-craft.png",
+    image: "space-craft.png",
     siteUrl: "https://lepus.netlify.app/",
   },
   plugins: [

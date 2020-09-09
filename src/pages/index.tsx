@@ -15,7 +15,7 @@ const IndexPage = (props: Props) => {
         <div>
           <h2 className="text-4xl  sm:mb-6 text-center">Blogs</h2>
           {/* 主要なカテゴリ */}
-          <div className="flex items-center">
+          {/* <div className="flex items-center">
             <p className="py-1 px-2 underline cursor-pointer hover:text-teal-400">
               All
             </p>
@@ -25,7 +25,7 @@ const IndexPage = (props: Props) => {
             <p className="py-1 px-2 underline cursor-pointer hover:text-teal-400">
               Next.js
             </p>
-          </div>
+          </div> */}
         </div>
         <TopSVG />
       </div>

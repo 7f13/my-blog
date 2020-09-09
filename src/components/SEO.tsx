@@ -37,7 +37,7 @@ export const SEO: React.FC<SEOProps> = props => {
   const {
     title,
     description,
-    url,
+    siteUrl,
     author,
     meta = [],
     keywords = [],
@@ -45,14 +45,14 @@ export const SEO: React.FC<SEOProps> = props => {
   } = siteMetadata
   const siteTitle = props.title || title
   const siteDescription = props.description || description
-  const siteUrl = props.url || url
+  const url = props.url || siteUrl
   const siteAuthor = props.author || author
-  const siteImage = props.image || image
+  const siteImage = `${siteUrl}${props.image || image}`
   const siteKeywords = [...keywords, props.keywords].join(",")
   const metaData = [
     {
       name: "canonical",
-      content: siteUrl,
+      content: url,
     },
     {
       name: "description",
@@ -64,7 +64,7 @@ export const SEO: React.FC<SEOProps> = props => {
     },
     {
       name: "og:url",
-      content: siteUrl,
+      content: url,
     },
     {
       name: "og:type",
@@ -119,12 +119,14 @@ export const SEO: React.FC<SEOProps> = props => {
     },
   ]
   return (
-    <Helmet
-      htmlAttributes={{ lang: "jp" }}
-      title={siteTitle}
-      titleTemplate={`%s | ${siteMetadata.title}`}
-      meta={metaData}
-      link={linkData}
-    />
+    <>
+      <Helmet
+        htmlAttributes={{ lang: "jp" }}
+        title={siteTitle}
+        titleTemplate={`%s | ${siteMetadata.title}`}
+        meta={metaData}
+        link={linkData}
+      />
+    </>
   )
 }
