@@ -18,6 +18,7 @@
     "gatsby-plugin-root-import": "^2.0.5",
     "gatsby-plugin-sass": "^2.3.12",
     "gatsby-plugin-sharp": "^2.6.28",
+    "gatsby-plugin-sitemap": "^2.4.12",
     "gatsby-remark-autolink-headers": "^2.3.11",
     "gatsby-remark-code-titles": "^1.1.0",
     "gatsby-remark-images": "^3.3.28",
