@@ -14,13 +14,13 @@ interface Props extends PageRendererProps {
 const BlogPostTemplate: React.FC<Props> = ({ data }) => {
   const { width } = useWindowSize()
   const { markdownRemark } = data
-  const { frontmatter, tableOfContents, html } = markdownRemark!
+  const { excerpt, frontmatter, tableOfContents, html } = markdownRemark!
   const featuredImgFluid =
     frontmatter!.featuredImage &&
     frontmatter!.featuredImage!.childImageSharp!.fluid
   return (
     <BlogPageLayout>
-      <SEO title={`${frontmatter!.title!} - Lepus`} />
+      <SEO title={`${frontmatter!.title!} - Lepus`} description={excerpt!} />
       <div className="blog-post-page">
         <div className="blog-post-container ">
           <Img
@@ -72,6 +72,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       tableOfContents(pathToSlugField: "frontmatter.slug")
+      excerpt
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         slug
