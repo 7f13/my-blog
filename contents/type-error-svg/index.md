@@ -1,5 +1,5 @@
 ---
-slug: "/blog/type-error-svg"
+slug: "/type-error-svg"
 date: "2020-09-07"
 title: "Gatsby + TypeScriptでSVGファイルをコンポーネントとしてimport出来るようにする"
 category: ["Gatsby", "TypeScript"]

@@ -1,5 +1,5 @@
 ---
-slug: "/blog/don't-recommend-starter"
+slug: "/don't-recommend-starter"
 date: "2020-09-08"
 title: "初心者がGatsbyをスタータープロジェクトから始めることをおすすめしない理由"
 category: ["Gatsby"]
