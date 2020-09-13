@@ -23,6 +23,9 @@ body {
     position: relative;
     .blog-post-content {
       overflow-wrap: break-word;
+      a {
+        color: #3182ce;
+      }
       ul {
         list-style: initial;
         margin: 1rem 0 1rem 2rem;
