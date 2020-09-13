@@ -28,6 +28,7 @@
     "gatsby-transformer-sharp": "^2.5.13",
     "generate-robotstxt": "^8.0.3",
     "node-sass": "^4.14.1",
+    "pngquant-bin": "3.1.1",
     "prismjs": "^1.21.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
