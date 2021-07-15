@@ -22,7 +22,7 @@ export const SERVICE_TYPE = {
   INSTAGRAM: "instagram",
 }
 export const SNS_LINKS = [
-  { to: "https://twitter.com/Sakaguchi01628", service: SERVICE_TYPE.TWITTER },
+  { to: "https://twitter.com/__sswave", service: SERVICE_TYPE.TWITTER },
   {
     to: "https://www.instagram.com/neosavage_/?hl=en",
     service: SERVICE_TYPE.INSTAGRAM,

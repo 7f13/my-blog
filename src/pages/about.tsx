@@ -28,7 +28,7 @@ export default function AboutPage() {
           が運営する技術系個人ブログです。
           <br />
           <br />
-          主にNext.jsやGatsby.js等のReactアプリケーションフレームワークや、サーバレスアーキテクチャ関連の技術やサービスについての記事を更新しています。
+          主にNext.jsやGatsby.js等のReactアプリケーションフレームワークや、サーバレスアーキテクチャ関連の技術やサービスについて、最近ではFlutter関係の記事を更新しています。
           <br />
           <br />
           この辺りの技術はまだまだ日本ではメジャーではなく、少し複雑なことをしようとすると思うように日本語の情報を得られないことも多いです。僅かでもどなたかのお役にたれてばと思い当ブログを運営しています。
@@ -45,9 +45,9 @@ export default function AboutPage() {
           <br />
           また、{" "}
           <a href={twitterLink!.to} target="_blank">
-            (@Sakaguchi01528)
+            (@__ssave)
           </a>
-          はお仕事も絶賛募集中です！自走力の高さには自信があります。極めて少数、または個人での開発でパフォーマンスを発揮できます。WEBサイト制作やWEBアプリケーション開発にお困りの方はお気軽にご連絡ください！
+          はお仕事も絶賛募集中です！自走力の高さには自信があります。極めて少数、または個人での開発でパフォーマンスを発揮できます。モバイル / WEBアプリケーション開発やWEBサイト制作にお困りの方はお気軽にご連絡ください！
         </p>
         <Link to="/contact">
           <button className="mx-auto py-2 px-4 rounded border border-solid border-gray-600 text-gray-800 mb-12  block hover:border-teal-200 hover:text-teal-400 focus:outline-none">
@@ -59,15 +59,14 @@ export default function AboutPage() {
         <div>
           <p className="text-xl text-center ">Kosei Sakaguchi</p>
           <p className="text-gray-700 text-md text-center mb-6">
-            フロントエンドエンジニア / WEBデザイナー
+            フロントエンドエンジニア
           </p>
           <p className="mb-6 sm:px-20">
-            福岡市を拠点として活動するフリーランスのフロントエンジニア /
-            WEBデザイナーです。
-            Next.jsやGatsby.js、TypeScriptをメイン技術として使用しています。
+            福岡市を拠点として活動するフリーランスのフロントエンジニアです。
+            Next.jsやGatsby.js、TypeScript、Flutterをメイン技術として使用しています。
             <br />
             <br />
-            元々はJavaでサーバーサイドの開発をしていましたが、最近のフロントエンド周辺技術や、サーバーレスアーキテクチャに次世代の可能性を感じ、独立後転身、上記関連技術を中心にお仕事を頂いています。フルスタック開発も可能です。
+            元々はJavaでサーバーサイドの開発をしていましたが、最近のフロントエンド周辺技術や、サーバーレスアーキテクチャに次世代の可能性を感じ、独立後転身、上記関連技術を中心にお仕事を頂いています。
             <br />
             <br />
             アプリ開発以外にも、LP作成やCMSを導入したWEBサイトの構築、改修など幅広く対応させて頂いております。
