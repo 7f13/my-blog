@@ -13,7 +13,7 @@ const ContactPage = () => {
       <h2 className="text-center text-xl font-extrabold mb-6">Email</h2>
       <a href="mailto: k-sakaguchi@lepus.co.jp">
         <h3 className="text-center text-2xl sm:text-4xl font-light mb-12">
-          k-sakaguchi@lepus.co.jp
+          krtpkp15@gmail.com
         </h3>
       </a>
       <p className="text-center mb-12 text-xs sm:text-sm font-gray-800">
