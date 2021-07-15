@@ -8,6 +8,7 @@ import { NyanCalImg } from "@/components/NyanCalImg"
 import { WorkCard } from "@/components/WorkCard"
 import { Hero } from "@/components/Hero"
 import { PortfolioImg } from "@/components/PortfolioImg"
+import { WinWinImg } from "@/components/WinWinImg"
 export const WorksPage = () => {
   return (
     <Layout>
@@ -17,6 +18,16 @@ export const WorksPage = () => {
       </Hero>
       <h2 className="text-center text-xl font-extrabold mb-6">All</h2>
       <div className="sm:px-20">
+        <a href="https://apps.apple.com/jp/app/winwin/id1567716388" target="_blank">
+          <WorkCard
+            title="WinWin【複数人マッチングアプリ】 - 個人開発"
+            subtitle="マッチングアプリ開発"
+            body="複数人でマッチングした当日に遊んだり、飲みにいけることに特化したマッチングアプリWinWinを友人と開発しました。現在IOSバージョンのみの公開となっており、Android版もリリースに向け作業中です。"
+            reverse
+          >
+            <WinWinImg className="w-4/5 rounded sm:w-5/12" />
+          </WorkCard>
+        </a>
         <a href="https://5-now.com/" target="_blank">
           <WorkCard
             title="GoNOW - ゼロスペック株式会社様"
