@@ -6,6 +6,8 @@ import { SEO } from "@/components/SEO"
 import Img, { FluidObject } from "gatsby-image"
 import { Profile } from "@/components/Profile"
 import { Link } from "gatsby"
+import { GatsbyImage } from "gatsby-plugin-image"
+
 interface Props extends PageRendererProps {
   data: Query
 }

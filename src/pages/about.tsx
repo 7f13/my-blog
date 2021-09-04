@@ -45,7 +45,7 @@ export default function AboutPage() {
           <br />
           また、{" "}
           <a href={twitterLink!.to} target="_blank">
-            (@7f13)
+            (@__7f13)
           </a>
           はお仕事も絶賛募集中です！自走力の高さには自信があります。極めて少数、または個人での開発でパフォーマンスを発揮できます。モバイル
           /

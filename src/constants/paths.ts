@@ -3,6 +3,10 @@ export const HEADER_PATHS = [
     to: "/about",
     displayName: "About",
   },
+  // {
+  //   to: "/categories",
+  //   displayName: "Category",
+  // },
   {
     to: "/works",
     displayName: "Works",
@@ -18,9 +22,9 @@ export const SERVICE_TYPE = {
   INSTAGRAM: "instagram",
 }
 export const SNS_LINKS = [
-  { to: "__7f13", service: SERVICE_TYPE.TWITTER },
+  { to: "https://twitter.com/__7f13", service: SERVICE_TYPE.TWITTER },
   {
-    to: "__7f13",
+    to: "https://www.instagram.com/___7f13/?hl=en",
     service: SERVICE_TYPE.INSTAGRAM,
   },
   { to: "https://github.com/7f13", service: SERVICE_TYPE.GITHUB },
