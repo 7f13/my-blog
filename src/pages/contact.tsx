@@ -11,7 +11,7 @@ const ContactPage = () => {
         <ContactSvg />
       </Hero>
       <h2 className="text-center text-xl font-extrabold mb-6">Email</h2>
-      <a href="mailto: k-sakaguchi@lepus.co.jp">
+      <a href="mailto: krtpkp15@gmail.com">
         <h3 className="text-center text-2xl sm:text-4xl font-light mb-12">
           krtpkp15@gmail.com
         </h3>
