@@ -1,23 +1,19 @@
 import React from "react"
 import { graphql, PageRendererProps } from "gatsby"
-import { useWindowSize } from "react-use"
 import { Query } from "@/types/gatsby-graphql"
 import { BlogPageLayout } from "@/components/BlogPageLayout"
-import { Layout } from "@/components/Layout"
 import { SEO } from "@/components/SEO"
-import Img from "gatsby-image"
+import Img, { FluidObject } from "gatsby-image"
 import { Profile } from "@/components/Profile"
 import { Link } from "gatsby"
 interface Props extends PageRendererProps {
   data: Query
 }
 const BlogPostTemplate: React.FC<Props> = ({ data }) => {
-  const { width } = useWindowSize()
   const { markdownRemark } = data
-  const { excerpt, frontmatter, tableOfContents, html } = markdownRemark!
-  const featuredImgFluid =
-    frontmatter!.featuredImage &&
-    frontmatter!.featuredImage!.childImageSharp!.fluid
+  const { excerpt, frontmatter, html } = markdownRemark!
+  const featuredImgFluid = frontmatter?.featuredImage?.childImageSharp
+    ?.fluid as FluidObject
   return (
     <BlogPageLayout>
       <SEO title={`${frontmatter!.title!} - Lepus`} description={excerpt!} />

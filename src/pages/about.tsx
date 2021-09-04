@@ -23,12 +23,12 @@ export default function AboutPage() {
         <p className="mb-4 sm:px-20">
           {"{Lepus}"}は、
           <a href={twitterLink!.to} target="_blank">
-            (@Sakaguchi01528)
+            (@__7f13)
           </a>
           が運営する技術系個人ブログです。
           <br />
           <br />
-          主にNext.jsやGatsby.js等のReactアプリケーションフレームワークや、サーバレスアーキテクチャ関連の技術やサービスについて、最近ではFlutter関係の記事を更新しています。
+          主にNext.jsやGatsby.js等のReactアプリケーションフレームワークや、サーバレスアーキテクチャ関連の技術やサービスについて、最近ではFlutter関係の記事を更新していく予定です。
           <br />
           <br />
           この辺りの技術はまだまだ日本ではメジャーではなく、少し複雑なことをしようとすると思うように日本語の情報を得られないことも多いです。僅かでもどなたかのお役にたれてばと思い当ブログを運営しています。
@@ -40,14 +40,16 @@ export default function AboutPage() {
           独自実装した機能は少なく、一部を除いて殆どがpluginで実装できました。
           <br />
           <br />
-          使用したplugin等については記事へまとめておりますのでご参照いただくか、お気軽にお尋ねください！
+          使用したplugin等については記事へまとめる予定ですのでご参照いただくか、お気軽にお尋ねください！
           <br />
           <br />
           また、{" "}
           <a href={twitterLink!.to} target="_blank">
-            (@__ssave)
+            (@7f13)
           </a>
-          はお仕事も絶賛募集中です！自走力の高さには自信があります。極めて少数、または個人での開発でパフォーマンスを発揮できます。モバイル / WEBアプリケーション開発やWEBサイト制作にお困りの方はお気軽にご連絡ください！
+          はお仕事も絶賛募集中です！自走力の高さには自信があります。極めて少数、または個人での開発でパフォーマンスを発揮できます。モバイル
+          /
+          WEBアプリケーション開発やWEBサイト制作にお困りの方はお気軽にご連絡ください！
         </p>
         <Link to="/contact">
           <button className="mx-auto py-2 px-4 rounded border border-solid border-gray-600 text-gray-800 mb-12  block hover:border-teal-200 hover:text-teal-400 focus:outline-none">

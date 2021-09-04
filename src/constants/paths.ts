@@ -3,10 +3,6 @@ export const HEADER_PATHS = [
     to: "/about",
     displayName: "About",
   },
-  // {
-  //   to: "/categories",
-  //   displayName: "Category",
-  // },
   {
     to: "/works",
     displayName: "Works",
@@ -22,10 +18,10 @@ export const SERVICE_TYPE = {
   INSTAGRAM: "instagram",
 }
 export const SNS_LINKS = [
-  { to: "https://twitter.com/__sswave", service: SERVICE_TYPE.TWITTER },
+  { to: "__7f13", service: SERVICE_TYPE.TWITTER },
   {
-    to: "https://www.instagram.com/neosavage_/?hl=en",
+    to: "__7f13",
     service: SERVICE_TYPE.INSTAGRAM,
   },
-  { to: "https://github.com/neo-savage", service: SERVICE_TYPE.GITHUB },
+  { to: "https://github.com/7f13", service: SERVICE_TYPE.GITHUB },
 ]
