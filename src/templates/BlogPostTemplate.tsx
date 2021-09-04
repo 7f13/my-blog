@@ -3,7 +3,6 @@ import { graphql, PageRendererProps } from "gatsby"
 import { Query } from "@/types/gatsby-graphql"
 import { BlogPageLayout } from "@/components/BlogPageLayout"
 import { SEO } from "@/components/SEO"
-import Img, { FluidObject } from "gatsby-image"
 import { Profile } from "@/components/Profile"
 import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
@@ -14,18 +13,18 @@ interface Props extends PageRendererProps {
 const BlogPostTemplate: React.FC<Props> = ({ data }) => {
   const { markdownRemark } = data
   const { excerpt, frontmatter, html } = markdownRemark!
-  const featuredImgFluid = frontmatter?.featuredImage?.childImageSharp
-    ?.fluid as FluidObject
+  const featuredImgFluid =
+    frontmatter?.featuredImage?.childImageSharp?.gatsbyImageData
   return (
     <BlogPageLayout>
       <SEO title={`${frontmatter!.title!} - Lepus`} description={excerpt!} />
       <div className="blog-post-page">
         <div className="blog-post-container ">
-          <Img
-            fluid={featuredImgFluid}
+          <GatsbyImage
+            image={featuredImgFluid}
+            alt="見出し画像"
             className="object-cover mb-6
         featured-img "
-            fadeIn={false}
             draggable={false}
             loading="eager"
           />
@@ -78,9 +77,7 @@ export const pageQuery = graphql`
         category
         featuredImage {
           childImageSharp {
-            fluid(maxWidth: 1128) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: FULL_WIDTH)
           }
         }
       }

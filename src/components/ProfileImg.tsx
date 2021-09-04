@@ -1,29 +1,25 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 interface Props {
   className?: string
 }
 export const ProfileImg: React.FC<Props> = ({ className }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      file(relativePath: { eq: "profile.jpg" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
+  const data = useStaticQuery(graphql`{
+  file(relativePath: {eq: "profile.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
     }
-  `)
+  }
+}
+`)
   return (
-    <Img
-      fluid={data.file.childImageSharp.fluid}
+    <GatsbyImage
+      image={data.file.childImageSharp.gatsbyImageData}
       alt="profile picture"
       draggable={false}
       fadeIn={false}
       loading="eager"
-      className={className}
-    />
-  )
+      className={className} />
+  );
 }
